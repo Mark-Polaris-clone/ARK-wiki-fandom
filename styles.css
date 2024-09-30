@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.scorched-earth-bg {
+    background-image: url('img/Scorched_Earth.jpg'); /* Путь к фону для страницы Scorched Earth */
+    background-size: cover; /* Охватывает весь экран */
+    background-attachment: fixed; /* Фон остаётся неподвижным при прокрутке */
+    background-position: center; /* Центрирование фона */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Тень для выделения */
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Размытие фона за контейнером */
+}
+
+h1, h2, h3 {
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.dlc-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dlc-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.highlight:hover {
+    color: #28a745; /* Зеленый цвет */
+    background-color: #e6ffe6; /* Легкий зеленый фон */
+}
